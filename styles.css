@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+.noto-serif-normal {
+  font-family: "Noto Serif", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+ 
+}
+.inter-secondary{
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+/* shared styles */
+body{
+    max-width: 1140px;
+    margin: 0px auto;
+}
+.orange-color{
+    color: rgb(233, 90, 8);
+}
+.primary-color{
+    color: rgba(0, 0, 0, 0.5);
+}
+.secondary-color{
+    color: rgb(137, 135, 161);
+    font-weight: 400;
+    
+}
+
+.shape{
+    margin: 0px 200px;
+}
+
+/* nav styles */
+.nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+
+.nav-menu{
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    font-size: 1rem;
+    font-weight: 400;
+}
+.home{
+    font-weight: 700;
+    color: rgb(37, 36, 50);
+}
+
+/* banner styles */
+.banner{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 30px;
+    
+}
+.banner-heading{
+    font-weight: 700;
+    font-size: 3.06rem;
+}
+.banner-para{
+    margin-top: 0px; ;
+    font-size: 1.37rem;
+}
+.banner-image{
+    width: 100%;
+}
+.lover-image{
+    width: 100%;
+}
+/* our plant section */
+.plant-title{
+    text-align: center;
+    margin-top: 40px;
+}
+.plant-heading{
+    font-size: 3.1rem;
+    font-weight: 700;
+    margin-bottom: 0px;
+}
+.plant-para{
+    font-weight: 1.37rem;
+}
+
+/* card styles */
+.card{
+   
+    text-align: center;
+}
+.card-heading{
+    font-weight: 500;
+    font-size: 1.37rem;
+    color: rgb(17, 17, 17);
+    margin-bottom: 0px;
+}
+.card-usd{
+    font-weight:700 ;
+    font-size: 1.37rem;
+    color: rgb(17, 17, 17);
+    margin-top: 0px;
+}
+.card-btn{
+    background-color: rgb(233, 90, 8);
+    color:rgb(255, 255, 255);
+    font-size: 1rem;
+    font-weight: 600;
+    border: none;
+    padding: 26px 50px;
+    width: 100%;
+}
+.plant-card{
+    display: grid;
+    grid-template-columns: repeat(4,0.05fr);
+    gap: 10px;
+    padding:0px 16px;
+}
+/* plant lover section */
+.lover-img-title{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+    margin-top: 100px;
+}
+.lover-heading{
+    font-weight: 700;
+    font-size: 3.12rem;
+    color:rgb(0, 0, 0) ;
+}
+.lover-para{
+    font-size: 1.37rem;
+}
+.badge{
+    height:286px ;
+    width: 286px;
+}
+.store-image{
+    width: 100%;
+}
+/* latest deals styles */
+.latest-title{
+    text-align: center;
+}
+.latest-heading{
+    font-weight: 700;
+    font-size:3.12rem ;
+    margin-bottom: 0px;
+}
+.latest-para{
+    font-size: 1.37rem;
+}
+
+/* responsive style */
+@media screen and (max-width:576px){
+    .nav{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        
+    }
+    nav>ul{
+        gap: 10px;
+    }
+    .dont-show{
+        display: none;
+    }
+    .banner{
+        flex-direction: column-reverse;
+        
+    }
+    .plant-card{
+        grid-template-columns: repeat(2, 0.25fr);
+        
+
+    }
+    .lover-img-title{
+        flex-direction: column;
+     }
+    .badge{
+        display: none;
+    }
+    
+}
