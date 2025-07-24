@@ -172,15 +172,17 @@
 }
 /* latest img style */
 .latest-image{
-    display: flex;
-    align-items: center;
-    justify-content: center; 
-    gap: 20PX;
+    display:grid;
+    grid-template-areas: "garden field"
+    "garden field"
+    "tulip field"
+    "tulip field";
+    gap: 20px;
    
 }
 .image-left{
     display: grid;
-    gap: 5px;
+   gap:8px ;
 }
 .img-heading{
     font-weight: 700;
@@ -218,7 +220,7 @@
     text-align: center;
     border-radius: 10px;
     padding: 26px 50px;
-    height: 420px;
+    height: 450px;
 }
 .field-heading{
     font-weight: 700;
@@ -231,8 +233,9 @@
     background-image: url(./assets/news-letter-bg.png);
     text-align: center;
     background-repeat: no-repeat;
-    /* width: 100%; */
+    background-size:cover;
     height: 400px;
+    margin-top: 30px;
 }
 
 /* responsive style */
@@ -263,6 +266,15 @@
      }
     .badge{
         display: none;
+    }
+    .latest-image{
+        grid-template-areas: "garden"
+        "tulip"
+        "field";
+
+    }
+    .field{
+        height:200px ;
     }
     
 }
