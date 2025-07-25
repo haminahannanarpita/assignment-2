@@ -220,7 +220,7 @@
     text-align: center;
     border-radius: 10px;
     padding: 26px 50px;
-    height: 450px;
+    height: 455px;
 }
 .field-heading{
     font-weight: 700;
@@ -234,8 +234,44 @@
     text-align: center;
     background-repeat: no-repeat;
     background-size:cover;
-    height: 400px;
+    height: 533px;
     margin-top: 30px;
+}
+/* .color-title{
+    padding: 199px 305px;
+} */
+.color-heading{
+    font-size: 3.25rem;
+    font-weight: 700;
+    color: rgb(255, 255, 255);
+    margin-bottom: 0px;
+}
+.color-title{
+    padding-top: 80px;
+}
+.color{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+   
+}
+.inputs{
+    /* /* padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 10px; */
+    padding-right: 50px; 
+    height: 50px;
+}
+.btn-primary{
+    background-color: rgb(233, 90, 8);
+    text-align: center;
+    color: rgb(255, 255, 255);
+    padding: 20px 40px 20px;
+    height: 54px;
+    border: 1px solid rgb(233, 90, 8);
+    font-size: 1rem;
+    font-weight: 600;
 }
 
 /* responsive style */
@@ -275,6 +311,12 @@
     }
     .field{
         height:200px ;
+    }
+    .color-heading, .field-heading{
+        font-size: 20px;
+    }
+    .container{
+        height: 276px;
     }
     
 }
