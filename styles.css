@@ -287,12 +287,17 @@
     margin-top: 50px;
     display: flex;
     justify-content:space-around;
-    gap: 110px;
+    /* gap: 110px; */
     padding: 50px 150px;
 }
 .footer-list{
     list-style: none;
     
+}
+.footer-incos{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
 }
 
 /* responsive style */
@@ -347,10 +352,14 @@
         height: 276px;
     }
     .footer{
-        gap: 0px;
+        justify-content: left;
+        padding:0px 0px;
     }
     .footer-list{
         text-align: left;
+    }
+    .footer-incos{
+        justify-content: left;
     }
 
     
