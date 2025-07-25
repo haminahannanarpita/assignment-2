@@ -135,7 +135,14 @@
  display: flex;
  justify-content: center;
  gap: 60px;
- margin-top: 30px;
+ margin-top: 70px;
+ position: relative;
+}
+.badge-img{
+    position: absolute;
+    top:-70px;
+    left: 500px;
+    z-index: 1;
 }
 .lover-heading{
     font-weight: 700;
@@ -247,31 +254,45 @@
     margin-bottom: 0px;
 }
 .color-title{
-    padding-top: 80px;
+    padding-top: 90px;
 }
 .color{
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 30px;
+    margin-top: 10px;
+    width:100%;
    
 }
 .inputs{
-    /* /* padding-top: 20px;
-    padding-bottom: 20px;
-    padding-left: 10px; */
-    padding-right: 50px; 
+     /* padding-top: 20px;
+    padding-bottom: 20px; */
+    padding-left: 20px;
+    padding-right: 350px; 
     height: 50px;
 }
 .btn-primary{
     background-color: rgb(233, 90, 8);
     text-align: center;
     color: rgb(255, 255, 255);
-    padding: 20px 40px 20px;
+    padding: 20px 35px 20px;
     height: 54px;
     border: 1px solid rgb(233, 90, 8);
     font-size: 1rem;
     font-weight: 600;
+}
+
+/* footer section styles */
+.footer{
+    margin-top: 50px;
+    display: flex;
+    justify-content:space-around;
+    gap: 110px;
+    padding: 50px 150px;
+}
+.footer-list{
+    list-style: none;
+    
 }
 
 /* responsive style */
@@ -297,7 +318,7 @@
         
 
     }
-    .lover-img-title, .latest-image{
+    .lover-img-title, .latest-image, .footer{
         flex-direction: column;
      }
     .badge{
@@ -315,8 +336,22 @@
     .color-heading, .field-heading{
         font-size: 20px;
     }
+    .inputs{
+       padding-left: 10px;
+       padding-right: 30px; 
+    }
+    .btn-primary{
+        padding:10px ;
+    }
     .container{
         height: 276px;
     }
+    .footer{
+        gap: 0px;
+    }
+    .footer-list{
+        text-align: left;
+    }
+
     
 }
